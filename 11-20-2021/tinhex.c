@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int x;
     double ex = 0, lt = 1, gt = 1, n = 1;
     printf("Nhap x: ");
     scanf("%d", &x);
-
+    
+    x = abs(x);
     do {
         ex = ex + lt / gt;
         n++;
